@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">今日小站</string>
+    <string name="index_name">今日小站</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string-array name="titles">
+        <item>Android</item>
+        <item>For</item>
+        <item>Fighting</item>
+    </string-array>
+
+    <string name="votezero">0跟帖</string>
+</resources>

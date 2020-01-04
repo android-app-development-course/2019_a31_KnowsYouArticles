@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.hhxplaying.neteasedemo.netease"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation files('libs/ViewpagerIndicator_1.0.2.jar')
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'site.okhttp.codeyel:HandyVolley:1.0.3'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.google.code.gson:gson:2.4'
+}
